@@ -1,10 +1,12 @@
-import { Button } from '@/components/ui/button';
+import { Jumbotron } from '@/shop/components/Jumbotron';
 
 export const HomePage = () => {
   return (
-    <div>
-      <h1 className='font-montserrat'>Hola Mundo</h1>
-      <Button>Click me</Button>
-    </div>
+    <>
+      <Jumbotron
+        title={`Colección ${new Date().getFullYear()}`}
+        subtitle='Ropa minimalista y elegante inspirada en el diseño futurista de Tesla.'
+      />
+    </>
   );
 };
